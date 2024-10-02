@@ -20,6 +20,6 @@ def test_azure_git_deploy(req: func.HttpRequest) -> func.HttpResponse:
         return func.HttpResponse(f"Hello, {name}. This HTTP triggered function executed successfully.")
     else:
         return func.HttpResponse(
-             "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.",
+             "This is a testing code to deploy as CI/CD using github actions",
              status_code=200
         )
