@@ -3,8 +3,8 @@ import logging
 
 app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
 
-@app.route(route="function_githubtestdeploy")
-def function_githubtestdeploy(req: func.HttpRequest) -> func.HttpResponse:
+@app.route(route="test_azure_git_deploy")
+def test_azure_git_deploy(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
     name = req.params.get('name')
